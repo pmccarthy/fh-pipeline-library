@@ -14,6 +14,7 @@ def call(body) {
     for (def repo in utils.mapToList(repos)) {
         print "REPO BATCH JOB"
         print repo[0]
+        print repo[1]
         // fhcapRepoAdd {
         //     name = repo[0]
         //     url = repo[1]
