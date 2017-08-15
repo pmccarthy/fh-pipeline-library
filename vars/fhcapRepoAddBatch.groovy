@@ -15,6 +15,7 @@ def call(body) {
         fhcapRepoAdd {
             name = repo[0]
             url = repo[1]
+            clustersDir = repo[2] ?: 'clusters'
         }
     }
 }
