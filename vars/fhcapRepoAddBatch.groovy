@@ -15,9 +15,11 @@ def call(body) {
         print "REPO BATCH JOB"
         print repo[0]
         print repo[1]['url']
-        // fhcapRepoAdd {
-        //     name = repo[0]
-        //     url = repo[1]
-        // }
+        print repo[1]['clustersDir']
+        fhcapRepoAdd {
+            name = repo[0]
+            url = repo[1]['url']
+            clustersDir = repo[1]['clustersDir']
+        }
     }
 }
